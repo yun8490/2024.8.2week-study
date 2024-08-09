@@ -1,0 +1,14 @@
+.text-input{
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+/* 모든 input에서 type이 email인것만 */
+input[type=email]{
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid blue;
+    border-radius: 5px;
+}

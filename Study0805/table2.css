@@ -1,0 +1,107 @@
+table{
+    border-collapse: collapse;
+}
+div,input,textarea{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+/* ----------------디폴트---------------- */
+
+.blueback-div{
+    background-color: skyblue;
+    padding: 30px;
+}
+.title-div{
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+}
+
+table{
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    /* 셀 넓이 고정 */
+    table-layout: fixed;
+    border-radius: 10px;
+    background-color: white;
+}
+
+td,th{
+    padding: 20px;
+    text-align: center;
+}
+
+.cart-table td{
+    padding: 15px;
+    border-bottom: 1px solid #ced3de;
+}
+
+.cell-long{
+    width: 300px;
+}
+
+.buy-btn{
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: coral;
+    color: white;
+    /* 버튼에 마우스 가져다 대면 커서 변함 */
+    cursor: pointer;
+}
+/* 스타일 hfa로 외워 */
+/* hover는 마우스 올릴때 스타일주는거임 */
+.buy-btn:hover{
+    background-color: chocolate;
+}
+/* active는 눌렀을때 스타일 */
+.buy-btn:active{
+    background-color: brown;
+}
+
+/* focus는 눌렀을때 계속유지되는 스타일 다른거 클릭하면 돌아옴 */
+.buy-btn:focus{
+    background-color: gray;
+}
+
+.input-test{
+    font-size: 20px;
+}
+
+.input-test:focus{
+    border-bottom: 2px solid red;
+}
+
+.custom-link{
+    /* 링크 밑줄 없애줌 */
+    text-decoration: none;
+}
+.custom-link:link{
+    color: violet;
+}
+.custom-link:visited{
+    color:yellow;
+}
+
+.f-small{
+    font-size: 12px;
+}
+
+.f-mid{
+    font-size: 16px;
+}
+.main-btn{
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.red-btn{
+    background-color: red;
+}
+.blue-btn{
+    background: blue;
+}

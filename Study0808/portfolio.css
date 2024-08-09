@@ -1,0 +1,189 @@
+body{
+    margin: 0;
+}
+div{
+    box-sizing: border-box;
+}
+
+/* ------------------------------landing css------------------------------ */
+/* ------------------------------landing css------------------------------ */
+.landingpage-div{
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(to bottom, rgb(54, 163, 221), rgb(68, 68, 168));
+}
+.landingtext-div{
+    width: 50%;
+    height: 50%;
+    padding: 30px;
+    color: white;
+    float: left;
+}
+.landingtext-div p{
+    font-size: 14px;
+}
+.landingtext-btn{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(28, 28, 28);
+    color: white;
+}
+.landingimg-div{
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;/* 박스를 자기위치로 설정 */
+}
+.landingimg-div img{
+    width: 320px;
+    /* img를 부모인 .landingimg-div위치에 맞춤 */
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+}
+/* ------------------------------landing css------------------------------ */
+
+
+/* ------------------------------show css------------------------------ */
+.show-div{
+    width: 100%;
+    height: 200px;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+}
+.show-div button{
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(28, 28, 28);
+    color: white;
+}
+/* ------------------------------show css------------------------------ */
+
+/* ------------------------------service css------------------------------ */
+.service-div{
+    width: 100%;
+    height: 320px;
+    padding: 20px;
+    background-color: rgb(84, 84, 193);
+    color: white;
+}
+.serviceoffer-div{
+    text-align: center;
+}
+.serviceicon-div{
+    width: 100%;
+    /* 자식 디브박스들 넓이 1200안에서 고정되게 */
+    max-width: 1200px;
+    padding: 20px;
+    /* 마진오토 사용하려면 명시적인 width 설정해야됨*/
+    margin: auto;
+}
+
+.serviceicon-div div{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.serviceicon-div i{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    /* 패딩줘야 아이콘 흰색원 정중아에 옴 */
+    padding:23px;
+    background-color: white;
+    color: rgb(100, 100, 190);
+    /* 여백 생겨서 원이 타원으로 나오는것을 해결 */
+    box-sizing: border-box;
+}
+.serviceicon-div p{
+    font-size: 14px;
+}
+/* ------------------------------service css------------------------------ */
+
+/* ------------------------------portfolio css------------------------------ */
+.portfolio-div{
+    height: 120px;
+    text-align: center;
+}
+.portfoliosub-div{
+    position: relative;
+    top: 30px;
+}
+.portfoliosub-div p{
+    position: relative;
+    top: 18px;
+    font-size: 12px;
+}
+/* ------------------------------portfolio css------------------------------ */
+
+/* ------------------------------link css------------------------------ */
+.link-div{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+.linkimg-div{
+    float: left;
+    width: 50%;
+    height: 300px;
+}
+/* 커서 올릴때 효과 */
+.linkimg-div img:hover{
+    /* 이미지를 원래이미지크기의 90%로 축소 */
+    transform: scale(0.9);
+    transition: all 1s;
+}
+.link-div img{
+    width: 100%;
+    height: 100%;
+}
+.linktext-div{
+    position: relative;
+    padding: 30px;
+    width: 100%;
+    color: white;
+    margin-top: -300px;
+}
+/* ------------------------------link css------------------------------ */
+
+/* ------------------------------반응형 css------------------------------ */
+@media screen and (max-width: 768px){
+    /* ---------------landingpage 반응--------------- */
+    .landingtext-div{
+        width: 100%;
+        text-align: center;
+    }
+    .landingimg-div{
+        width: 100%;
+        height: 70%;
+        text-align: center;
+    }
+    .landingimg-div img{
+        width: 220px;
+        position: relative;
+        right: 0;
+        left: 0;
+        top: 40px;
+    }
+    /* ---------------service 반응--------------- */
+    .service-div{
+        height: 850px;
+        padding: 20px;
+    }
+    .serviceicon-div div{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 576px){
+    .linkimg-div{
+        float: left;
+        width: 100%;
+        height: 350px;
+    }
+}

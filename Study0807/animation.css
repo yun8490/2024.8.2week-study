@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+}
+
+.mainback-div{
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: auto;
+    background-color: aqua;
+}
+.mainback-div div{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    .mainback-div{
+        max-width: 600px;
+    }
+    .mainback-div div{
+        width: 50%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .mainback-div div{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.mainback-div i{
+    background-color: gray;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    color: white;
+
+/* --------------product-------------- */
+}
+.shop-bg{
+    background-color: rgb(200, 193, 193);
+    padding: 20px;
+}
+.shop-container{
+    display: flex;
+    background-color: gray;
+    width: 90%;
+    /* 내 자식들 디브를 중앙에 정렬시키겟다 */
+    justify-content: center;
+    /* 부모 요소 중앙에 위치하겠다 */
+    margin: auto;
+}
+.shop-item{
+    width: 25%;
+    padding: 10px;
+}
+.shop-item img{
+    width: 100%;
+    display: block;
+}
+
+/* ------------------------------------------------------- */
+/* 애니메이션만들기: 시작-최종-변경시점-transition */
+.overlay-wrap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* 이 히든때문에 오버랩 디브 박스에 넘치는 부분
+     안보임 원래는 겹쳐 보여야되는데 */
+    overflow: hidden;
+}
+/* overwrap에 커서 갖다대면 자식 오버블랙의 마진 탑을 50%로 변경
+    이러면 오버블랙의 디비는 위에 50%밑으로 내려감, */
+.overlay-wrap:hover .overblack{
+    margin-top: 0%;
+}
+.overblack{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    margin-top: 50%;
+    transition: all 1s;
+}
+/* ------------------------------------------------------- */
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    /* 위에 스타일이 모든게 변하면 1초뒤에 서서히 변경해줘 */
+    transition: all 1s;
+}
+.overlay:hover{
+    opacity: 1;
+}

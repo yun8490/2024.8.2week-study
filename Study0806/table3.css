@@ -1,0 +1,111 @@
+@font-face {
+    font-family: '폰트나눔';
+    src: url(../font/NanumMyeongjo.otf);
+    /* 폰트많이 쓰면 용량 많이 잡음 */
+}
+/* 글자 부드럽게 돌림,매우 조금 돌려야됨 */
+p,h4,h3,h2,h1,span{
+    transform:rotate(0.03deg)
+}
+table{
+    border-collapse: collapse;
+}
+div,input,textarea{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    font-family: '폰트나눔';
+}
+/* ----------------디폴트---------------- */
+.font-large{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.font-basic{
+    font-size: 16px;
+    color: black;
+}
+/* ---------------------------font--------------------------- */
+.back-div{
+    background-color: black;
+    padding: 30px;
+    margin: auto;
+}
+h3{
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 20px;
+}
+table{
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    border-spacing: 0;
+}
+thead{
+    color: white;
+    background-color: green;
+}
+th,td{
+    /* 텍스트 왼쪽 정렬 */
+    text-align: left;
+    padding: 20px;
+}
+.gray-tr{
+    background-color: rgb(184, 180, 180);
+}
+
+.cell-length{
+    width: 50px;
+}
+
+.flex-container{
+    /* div박스 가로배치 */
+    display: flex;
+    /* box 가운데 정렬 */
+    justify-content: center;
+    /* box 새로배치 */
+    /* flex-direction: column; */
+    /* width커서 밑으로 박스 보내고싶을때 */
+    /* flex-wrap: wrap; */
+    /* 행 가운데 */
+    align-items: center;
+    background-color: green;
+}
+.flex-item{
+    width: 50%;
+    height: 40px;
+    margin: 5px;
+    font-size: 30px;
+}
+.left-div{
+    align-items: left;
+}
+.right-div{
+    text-align: right;
+}
+
+.test{
+    /* 현재 브라우저 폭 비례한 단위 vw */
+    /* rem=>기본 폰트사이즈에 비례, rem크기에 비례하여 넓이도 같이 커짐 */
+    /* em => 자신의 폰트사이즈에 비례 */
+    width: 1;
+    height: 50vh;
+    background-color: red;
+}
+
+/* 반응형 화면, 1200px밑은 폰트사이즈 20으로 해라 
+breakpoint 기준 px갑은 1200,992,768,576 단위 많이 사용*/
+@media screen and (max-width: 1200px){
+    .main-title{
+        font-size: 20px;
+    }
+}

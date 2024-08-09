@@ -1,0 +1,62 @@
+.container1{
+    width: 800px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+.big-left{
+    width: 70%;
+    height: 300px;
+    float: left;
+}
+/*------------------ 오른쪽블록 -------------------*/
+.right1{
+    width: 20%;
+    height: 300px;
+    float: left;
+}
+.ezreal{
+    width: 180px;
+    height: 180px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+/*-------------------------------------------------*/
+
+
+.profile{
+    width: 20%;
+    height: 100px;
+}
+
+
+
+/*------------------ 블루블록 -------------------*/
+.blueleft{
+    width: 38%;
+    height: 40%;
+    color: black;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.blueright{
+    width: 40%;
+    height: 40%;
+    color: black;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.lion{
+    width: 100%;
+    height: 100%;
+}
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+
+.text{
+    width: 100%;
+    height: 200px;
+    margin-left: 10px;
+}

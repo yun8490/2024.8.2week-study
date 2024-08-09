@@ -1,0 +1,16 @@
+/* 모든 li태그안에 인라이블록 줌 , 스페이스바 쓰면 ~안에있는 그런 뜻*/
+/* 내 자식에게만 적용하겟다 '>' */
+.navbar a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li{
+    display: inline-block;
+    width: 60px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 5px;
+    text-align: center;
+}
